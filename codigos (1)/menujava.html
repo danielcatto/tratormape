@@ -1,0 +1,83 @@
+<html>
+<head>
+<STYLE TYPE="text/css">
+ <!--
+ 
+ .menuh	{
+ 		BORDER-COLOR : #FF6600 ;
+ 		cursor : hand ;
+ 		Border-Left : #000000 ;
+ 		Border-Top : #000000 ;
+ 		Padding-Left : 1px ;
+ 		Padding-Top : 1px ;
+ 		Background-Color : #FF6600 ;
+ 	}
+ .menu	{
+ 		Background-Color : #0066CC ;
+ 	}
+ .home	{
+ 		cursor : hand ;
+ 	}
+ 
+ .menulinks{
+ text-decoration:none;
+ }
+ //-->
+ </STYLE>
+</head>
+
+<body>
+
+<SCRIPT Language="Javascript1.2">
+<!--
+ 
+ //configure below variable for menu width, position on page
+ var menuwidth=110
+ var offsetleft=0
+ var offsettop=0
+ 
+ 
+ function makeStatic() {
+ if (document.all) {object1.style.pixelTop=document.body.scrollTop+offsettop}
+ else{eval(document.object1.top=eval(window.pageYOffset+offsettop));}
+ setTimeout("makeStatic()",0);
+ }
+ 
+ if (document.all) {document.write('<DIV ALIGN="CENTER" ID="object1" STYLE="Position:absolute; Top:20; Left:'+offsetleft+'; Z-Index:5;cursor:hand;background-color:#0066CC"><TABLE BORDER="1" width="'+menuwidth+'" CELLPADDING="0" CELLSPACING="0" BORDERCOLOR="#0066CC" bgcolor="#0066CC">')}
+ else if (document.layers){ document.write('<LAYER top="20" name="object1" left="'+offsetleft+'" BGCOLOR="0066CC"><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="1"><TR><TD><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" width="'+menuwidth+'">')}
+ 
+ if (document.all||document.layers)
+ document.write('<TR><TD BGCOLOR="#0066CC" BORDERCOLORDARK="#FFFFFF" BORDERCOLORLIGHT="#FFFFFF"><P ALIGN=CENTER><FONT SIZE="4" FACE=ARIAL>Menu</FONT></TD></TR>')
+ 
+ var menui = new Array();
+ var menul = new Array();
+ 
+ //configure below for menu items. Extend list as desired
+ 
+ menui[0]="Página inicial";
+ menui[1]="Parceria";
+ menui[2]="Cadastro";
+ menui[3]="Contato";
+ 
+ menul[0]="http://www.codigofonte.com.br";
+ menul[1]="http://www.codigofonte.com.br/seu-site.asp";
+ menul[2]="http://www.codigofonte.com.br/cadastro.asp";
+ menul[3]="http://www.codigofonte.com.br/contato.asp";
+ 
+ for (i=0;i<=menui.length-1;i++)
+ if (document.all) {document.write('<TR><TD BORDERCOLOR="black" ONCLICK="location=\''+menul[i]+'\'" onmouseover="className=\'menuh\'" onMouseout="className=\'menu\'"><CENTER><FONT>'+menui[i]+'</FONT></TD></TR>')}
+ else if (document.layers){document.write('<TR><TD BGCOLOR="black"><ILAYER><LAYER width="'+menuwidth+'" onmouseover="bgColor=\'#0066CC\'" onmouseout="bgColor=\'white\'"><CENTER><A HREF="'+menul[i]+'" class=menulinks>'+menui[i]+'</A></CENTER></LAYER></ILAYER></TD></TR>')}
+ 
+ if (document.all) {document.write('</TABLE></DIV>')}
+ else if (document.layers){document.write('</TABLE></TD></TR></TABLE></LAYER>')}
+ 
+ function menu3(){
+ if (document.all||document.layers)
+ makeStatic()
+ }
+ 
+ window.onload=menu3
+ 
+ //-->
+ </SCRIPT>
+</html>

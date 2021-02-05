@@ -1,0 +1,70 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+.global-div{
+	position:absolute;
+	display:block;
+	width:680px;
+	height:auto;
+	margin:auto;
+	left:60%;
+	margin-left:-490px;
+	margin-bottom:10px; 
+	background-color:#fff; 
+	padding:0 20px 10px 20px;
+	font-size: 35px;}
+	
+.topo-div{
+	width:680px; 
+	height:135px; 
+	background-color:#6a6a6a;
+	font-size:36px;
+	background-image:url(../images/img02.jpg) ;}
+.menu-div{
+	width:640px; 
+	height:auto; 
+	background:#383435; 
+	padding:12px 20px; 
+	margin-bottom:20px;
+	position:fixed;}
+	
+.dir-div{
+	position:relative; 
+	float:left; 
+	width:283px; 
+	height:auto; 
+	background:#6a6a6a; 
+	padding:0 0 17px 17px;}
+.conteudo-div{
+	display: compact;
+	position:relative; 
+	float:left; 
+	width:680px; 
+	height:auto; 
+	margin-right:20px;
+	}	
+
+
+
+/*Destaques E Chamadas */
+.destaques-div{
+	position:relative; 
+	float:left; 
+	width:680px; 
+	height:auto; 
+	background:#6a6a6a; 
+	padding-bottom:17px; }
+.chamadas-div{
+	position:relative; 
+	float:left; 
+	width:660px; 
+	height:auto; 
+	background-color:#CCC;
+	margin-top:17px; 
+	padding-bottom:8px; padding-top: 10px; padding-left: 10px; padding-right: 10px;
+	font-size: 35px;}
+	
+/*	Lateral Direita E Rodapé
